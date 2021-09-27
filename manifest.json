@@ -1,0 +1,22 @@
+{
+    "name": "Jira Ticket Validator",
+    "description": "Validates the required fields and pattern when creating a new ticket in Jira.",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {},
+    "content_scripts": [
+        {
+            "matches": [
+                "https://jira.jnj.com/browse/AGSL-3488"
+            ],
+            "css": ["icons.css"]
+        }
+    ]
+}

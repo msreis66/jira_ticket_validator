@@ -1,0 +1,100 @@
+.checkmark {
+    display:inline-block;
+    width: 21px;
+    height:21px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.status-mark-circle {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    left:0;
+    top:0;
+}
+
+.status-mark-stem {
+    position: absolute;
+    background-color:#fff;
+}
+
+.status-mark-kick {
+    position: absolute;
+    background-color:#fff;
+}
+
+.errormark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+/* .errormark_circle {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-color: red;
+    border-radius: 50%;
+    left:0;
+    top:0;
+}
+
+.errormark_stem {
+    position: absolute;
+    width: 3px;
+    height: 13px;
+    background-color:#fff;
+    left: 9px;
+    top: 4px;
+}
+
+.errormark_kick {
+    position: absolute;
+    width: 13px;
+    height: 3px;
+    background-color:#fff;
+    left: 4px;
+    top: 9px;
+} */
+
+.errormark .status-mark-circle {
+    background-color: red;
+}
+
+.checkmark .status-mark-circle {
+    background-color: green;
+}
+
+.errormark .status-mark-stem {
+    width: 3px;
+    height: 13px;
+    left: 9px;
+    top: 4px;
+}
+
+.checkmark .status-mark-stem {
+    width:3px;
+    height:9px;
+    left: 10px;
+    top: 5px;
+}
+
+.errormark .status-mark-kick {
+    width: 13px;
+    height: 3px;
+    left: 4px;
+    top: 9px;
+}
+
+.checkmark .status-mark-kick {
+    width:3px;
+    height:3px;
+    left: 7px;
+    top: 11px;
+}
