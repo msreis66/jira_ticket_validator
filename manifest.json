@@ -10,11 +10,13 @@
         "activeTab",
         "scripting"
     ],
-    "action": {},
+    "action": {
+        "default_title": "Click me"
+    },
     "content_scripts": [
         {
             "matches": [
-                "https://jira.jnj.com/browse/AGSL-3488"
+                "https://jira.jnj.com/browse/AGSL-*"
             ],
             "css": ["icons.css"]
         }

@@ -5,6 +5,9 @@
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: -30px;
 }
 
 .status-mark-circle {
@@ -33,35 +36,10 @@
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
-}
-
-/* .errormark_circle {
     position: absolute;
-    width: 21px;
-    height: 21px;
-    background-color: red;
-    border-radius: 50%;
-    left:0;
-    top:0;
+    top: 0;
+    right: -30px;
 }
-
-.errormark_stem {
-    position: absolute;
-    width: 3px;
-    height: 13px;
-    background-color:#fff;
-    left: 9px;
-    top: 4px;
-}
-
-.errormark_kick {
-    position: absolute;
-    width: 13px;
-    height: 3px;
-    background-color:#fff;
-    left: 4px;
-    top: 9px;
-} */
 
 .errormark .status-mark-circle {
     background-color: red;
