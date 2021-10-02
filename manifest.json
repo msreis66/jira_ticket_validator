@@ -11,7 +11,8 @@
         "scripting"
     ],
     "action": {
-        "default_title": "Click me"
+        "default_title": "Validate ticket",
+        "default_icon": "extension-icon.png"
     },
     "content_scripts": [
         {
