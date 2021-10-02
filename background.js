@@ -28,25 +28,16 @@ function ticketValidator() {
         },
 
         validateFieldById: function () {
-            var fields = ['versions-val', 'fixfor-val', 'priority-val', 'components-val', 'customfield_11300-val', 'customfield_11100-val', 'customfield_10004-val'];
-
-            if (this.isStatusCompleted()) {
-                fields.push('resolution-val', 'customfield_10200-val', 'customfield_10106-val');
-            }
+            var fields = ['versions-val', 'fixfor-val', 'priority-val', 'components-val', 'customfield_11300-val', 'customfield_11100-val', 'customfield_10004-val', 'resolution-val', 'customfield_10200-val', 'customfield_10106-val'];
 
             fields.forEach(element => {
                 var el = document.getElementById(element)
                 if (el !== null && el !== undefined) {
-                    var trimmedElValue = el.innerText.trim();
-                    var statusCorrect = !['None', 'Unresolved'].includes(trimmedElValue);
+                    var trimmedElValue = el.innerText.trim().toLowerCase();
+                    var statusCorrect = !['none', 'unresolved'].includes(trimmedElValue);
                     this.setStatusMark(statusCorrect, el)
                 }
             });
-        },
-
-        isStatusCompleted: function () {
-            var statusComponent = document.getElementById('status-val').querySelector('span');
-            return statusComponent.innerHTML === 'Completed';
         },
     }
     funcs.validateFieldById();

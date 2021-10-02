@@ -21,12 +21,10 @@
 
 .status-mark-stem {
     position: absolute;
-    background-color:#fff;
 }
 
 .status-mark-kick {
     position: absolute;
-    background-color:#fff;
 }
 
 .errormark {
@@ -41,12 +39,8 @@
     right: -30px;
 }
 
-.errormark .status-mark-circle {
-    background-color: red;
-}
-
-.checkmark .status-mark-circle {
-    background-color: green;
+.status-mark-circle {
+    background-color: white;
 }
 
 .errormark .status-mark-stem {
@@ -54,6 +48,7 @@
     height: 13px;
     left: 9px;
     top: 4px;
+    background-color: #ff5630;
 }
 
 .checkmark .status-mark-stem {
@@ -61,6 +56,7 @@
     height:9px;
     left: 10px;
     top: 5px;
+    background-color: #00875a;
 }
 
 .errormark .status-mark-kick {
@@ -68,6 +64,7 @@
     height: 3px;
     left: 4px;
     top: 9px;
+    background-color: #ff5630;
 }
 
 .checkmark .status-mark-kick {
@@ -75,4 +72,5 @@
     height:3px;
     left: 7px;
     top: 11px;
+    background-color: #00875a;
 }
