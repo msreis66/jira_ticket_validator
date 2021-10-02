@@ -1,7 +1,7 @@
 {
     "name": "Jira Ticket Validator",
     "description": "Validates the required fields and pattern when creating a new ticket in Jira.",
-    "version": "0.1",
+    "version": "1.0.2",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"
