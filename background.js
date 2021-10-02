@@ -1,4 +1,5 @@
 function ticketValidator() {
+
     var funcs = {
         validateFieldLabels: function () {
             var requiredLabels = ['issuetype', 'phase', 'bugtype'];
