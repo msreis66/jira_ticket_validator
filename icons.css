@@ -74,3 +74,25 @@
     top: 11px;
     background-color: #00875a;
 }
+
+.jira-ticket-validator.status-report {
+    border: 1px solid #34875a;
+    height: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0 40px;
+    background-color: #9fd2c1;
+    border-radius: 5px;
+}
+
+.jira-ticket-validator.status-report.errors {
+    border-color: #f95638;
+    background-color: #fcb8a8;
+}
+
+.jira-ticket-validator.status-report span::after {
+    content: "\a";
+    white-space: pre;
+}
